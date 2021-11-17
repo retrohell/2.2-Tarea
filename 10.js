@@ -1,11 +1,10 @@
 var teclado;
-let tot = 0;
 process.stdout.on('data', function(data){
     teclado = data;
-    for(let i=0; i<=teclado; i+=3){
-        tot+=1;
-        console.log(i);
+    if(teclado%2==0){
+        console.log("Par");
+    } else {
+        console.log("Impar");
     }
-    console.log("Total de multiplos ", tot-1);
     process.exit();
 });

@@ -1,9 +1,9 @@
 var teclado = 0, teclado2 = 0, num = 0, tot = 0;
-process.stdout.on('data', function (data) {
+process.stdin.on('data', function (data) {
     teclado = data;
     process.exit();
 });
-process.stdout.on('data', function (data) {
+process.stdin.on('data', function (data) {
     teclado2 = data;
     process.exit();
 });
